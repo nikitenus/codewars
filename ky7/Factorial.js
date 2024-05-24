@@ -5,16 +5,16 @@
 // More details about factorial can be found here.
 
 function factorial(n) {
-  let count = 1;
-  if (n < 0 || n > 12) {
-    throw new RangeError("The number must be between 0 and 12");
-  }
-  if (n === 0) {
-    return 1;
-  }
-  while (n > 0) {
-    count *= n;
-    n--;
-  }
-  return count;
+    let count = 1;
+    if (n < 0 || n > 12) {
+        throw new RangeError("The number must be between 0 and 12");
+    }
+    if (n === 0) {
+        return 1;
+    }
+    while (n > 0) {
+        count *= n;
+        n--;
+    }
+    return count;
 }
