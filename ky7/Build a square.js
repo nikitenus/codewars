@@ -9,12 +9,12 @@
 // +++
 
 function createSquare(n) {
-    let square = '';
-    for (let i = 0; i < n; i++) {
-      for (let j = 0; j < n; j++) {
-        square += '+';
-      }
-      square += '\n';
+  let square = "";
+  for (let i = 0; i < n; i++) {
+    for (let j = 0; j < n; j++) {
+      square += "+";
     }
-    return square.trimEnd();
+    square += "\n";
   }
+  return square.trimEnd();
+}
