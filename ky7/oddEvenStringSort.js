@@ -11,6 +11,14 @@
 // Notes
 // Tested strings are at least 8 characters long.
 
-function sortMyString(S) {
-    return 
+function sortMyString(s) {
+    let evenArr = s
+        .split('')
+        .filter((el, i) => i % 2 === 0)
+        .join('')
+    let oddArr = s
+        .split('')
+        .filter((el, i) => i % 2 !== 0)
+        .join('')
+    return `${evenArr} ${oddArr}`
 }
