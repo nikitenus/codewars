@@ -21,16 +21,36 @@ function correctPolishLetters(string) {
 	return string
 		.split('')
 		.map(el => {
-			if (el === 'ą') el = 'a'
-			if (el === 'ć') el = 'c'
-			if (el === 'ę') el = 'e'
-			if (el === 'ł') el = 'l'
-			if (el === 'ń') el = 'n'
-			if (el === 'ó') el = 'o'
-			if (el === 'ź') el = 'z'
-			if (el === 'ś') el = 's'
-			if (el === 'ż') el = 'z'
+			if (el === 'ą') {
+				return 'a'
+			}
+			if (el === 'ć') {
+				return 'c'
+			}
+			if (el === 'ę') {
+				return 'e'
+			}
+			if (el === 'ł') {
+				return 'l'
+			}
+			if (el === 'ń') {
+				return 'n'
+			}
+			if (el === 'ó') {
+				return 'o'
+			}
+			if (el === 'ź') {
+				return 'z'
+			}
+			if (el === 'ś') {
+				return 's'
+			}
+			if (el === 'ż') {
+				return 'z'
+			}
+			return el
 		})
 		.join('')
 }
 
+console.log(correctPolishLetters('Jędrzej Błądziński'))
