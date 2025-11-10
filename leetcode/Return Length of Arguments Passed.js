@@ -27,7 +27,7 @@
  * @return {number}
  */
 var argumentsLength = function (...args) {
-	return arguments.length
+	return args.length
 }
 
 /**
