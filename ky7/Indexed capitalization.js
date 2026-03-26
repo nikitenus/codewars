@@ -6,5 +6,15 @@
 // Good luck!
 
 function capitalize(string, indices) {
-    return "";
+  let arr = string.split("");
+  for (let i = 0; i < indices.length; i++) {
+    if (arr[indices[i]]) {
+      arr[indices[i]] = arr[indices[i]].toUpperCase();
+    }
+  }
+  return arr.join("");
 }
+
+console.log(capitalize("abcdef", [1, 2, 5])); // aBCdeF
+console.log(capitalize("abcdef", [1, 2, 5, 100])); // aBCdeF
+console.log(capitalize("codewars", [1, 3, 5, 50])); // cOdEwArs
